@@ -1,35 +1,46 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
+
+import AboutPage from './components/about-page/AboutPage';
+import MyButton from './components/my-button/MyButton';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <AppHeader />
+      <h2>Creating and nesting components</h2>
+
+      <MyButton />
+
+      <hr />
+
+      <h2>Writing markup with JSX</h2>
+
+      <AboutPage />
+
+      <hr />
+
+      <StylingElements />
     </>
   )
 }
 
-export default App
+function AppHeader() {
+  return (
+    <>
+      <h1>React learn starter</h1>
+      <hr />
+    </>
+  );
+}
+
+function StylingElements() {
+  return (
+    <img
+      className='avatar'
+      src="https://cryptologos.cc/logos/vite-vite-logo.png"
+      alt="avatar-img" />
+  );
+}
+
+export default App;
