@@ -2,6 +2,7 @@ import './App.css';
 
 import AboutPage from './components/about-page/AboutPage';
 import MyButton from './components/my-button/MyButton';
+import MyProfile from './components/my-profile/MyProfile';
 
 function App() {
 
@@ -21,6 +22,10 @@ function App() {
       <hr />
 
       <StylingElements />
+
+      <hr />
+
+      <MyProfile />
     </>
   )
 }
