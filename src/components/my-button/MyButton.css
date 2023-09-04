@@ -1,0 +1,7 @@
+.my-button-wrapper > button {
+    width: 100px;
+    height: 35px;
+    border: none;
+    text-align: center;
+    border-radius: 8px;
+}
