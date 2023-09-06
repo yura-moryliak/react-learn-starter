@@ -1,11 +1,21 @@
 import './App.css';
 
 import AboutPage from './components/about-page/AboutPage';
+import ConditionalRendering from './components/conditional-rendering/ConditionalRendering';
 import MyButton from './components/my-button/MyButton';
 import MyProfile from './components/my-profile/MyProfile';
 
 function App() {
 
+  return (
+    <>
+      <FirstStepsLearning />
+      <SecondStepLearning />
+    </>
+  )
+}
+
+function FirstStepsLearning() {
   return (
     <>
       <AppHeader />
@@ -27,14 +37,13 @@ function App() {
 
       <MyProfile />
     </>
-  )
+  );
 }
 
-function AppHeader() {
+function SecondStepLearning() {
   return (
     <>
-      <h1>React learn starter</h1>
-      <hr />
+      <ConditionalRendering />
     </>
   );
 }
@@ -45,6 +54,15 @@ function StylingElements() {
       className='avatar'
       src="https://cryptologos.cc/logos/vite-vite-logo.png"
       alt="avatar-img" />
+  );
+}
+
+function AppHeader() {
+  return (
+    <>
+      <h1>React learn starter</h1>
+      <hr />
+    </>
   );
 }
 
