@@ -1,0 +1,9 @@
+.my-profile-wrapper h4 {
+    font-size: 22px;
+    color: firebrick;
+}
+
+.my-profile-wrapper .my-profile-avatar-img {
+    border-radius: 50%;
+    border: 1px solid red;
+}
