@@ -5,6 +5,7 @@ import ConditionalRendering from './components/conditional-rendering/Conditional
 import MyButton from './components/my-button/MyButton';
 import MyProfile from './components/my-profile/MyProfile';
 import ProductsList from './components/about-page/products-list/ProductsList';
+import { useState } from 'react';
 
 function App() {
 
@@ -17,13 +18,20 @@ function App() {
 }
 
 function FirstStepsLearning() {
+
+  const [ count, setCount ] = useState(0);
+
+  function handleClick() {
+    setCount(count + 1);
+  }
+
   return (
     <>
       <AppHeader />
       <h2>Creating and nesting components</h2>
 
-      <MyButton />
-      <MyButton />
+      <MyButton count={count} onClick={ handleClick } />
+      <MyButton count={count} onClick={ handleClick } />
 
       <hr />
 
