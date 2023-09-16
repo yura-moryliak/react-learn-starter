@@ -23,6 +23,7 @@ function FirstStepsLearning() {
       <h2>Creating and nesting components</h2>
 
       <MyButton />
+      <MyButton />
 
       <hr />
 
