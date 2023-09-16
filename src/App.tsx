@@ -4,6 +4,7 @@ import AboutPage from './components/about-page/AboutPage';
 import ConditionalRendering from './components/conditional-rendering/ConditionalRendering';
 import MyButton from './components/my-button/MyButton';
 import MyProfile from './components/my-profile/MyProfile';
+import ProductsList from './components/about-page/products-list/ProductsList';
 
 function App() {
 
@@ -44,6 +45,7 @@ function SecondStepLearning() {
   return (
     <>
       <ConditionalRendering />
+      <ProductsList />
     </>
   );
 }
